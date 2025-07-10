@@ -1,0 +1,2 @@
+# twitter_bot_Deepseek
+geminiとDeepseekを使用して動くtwitter用自動投稿、自動返信プログラム
