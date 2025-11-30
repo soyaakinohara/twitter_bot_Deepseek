@@ -2,7 +2,7 @@
 GeminiとDeepseekを使用してツイート内容を自動生成、返答までしてくれるbotプログラム  
 このプログラムは、X APIのfreeプランではツイートの読み取りができず、自分のツイートについたリプライを取得できないため自動返信ボットが作れないという問題を、Gemini APIで無理やり解決してしまおうというプログラムです。  
 アカウントを返信用と投稿用に分け、X API制限も回避できるようにしています  
-twitter_bot_geminiというリポジトリのDeepseek版です
+twitter_bot_geminiというリポジトリのDeepseek版です  
 
 #### 動作する仕組み
 まず必要なもの   
@@ -28,13 +28,13 @@ gnome-screenshot
 タブレット側の設定  
 まず、androidタブレットに、投稿用botのメインアカウントでログインします。  
 開発者向けオプションを使用可能にして、「充電時画面消灯をオフ」「usbデバッグ」を使用可能にします。  
-次に、適当なオートクリッカー（おすすめはhttps://apkpure.com/jp/auto-clicker-auto-tapper/autoclicker.clicker.autoclickerapp.autoclickerforgames　）　をインストールして、Xの通知画面が一時間に一回更新＆一番上までスクロールされるようないい感じのマクロを組みます。  
+次に、適当なオートクリッカーをインストールして、Xの通知画面が一時間に一回更新＆一番上までスクロールされるようないい感じのマクロを組みます。  
 パソコン側の設定  
 まず、Xのデベロッパーポータルにアクセスして開発者として登録し、APIキーなどもろもろを取得します。  
 gemini APIはgoogle cloudから取得してください。（このAPIキーは二つのプログラムで使いまわすことを推奨）  
 DeepseekのAPIはOpenrouterに登録し、APIキーを発行してください
 そしてプログラム内のAPIキーの空欄や、自分のアカウント名（YOUR_TARGET_NAME）の部分を置き換えてください。  
-次にpythonをインストールします（やり方はhttps://www.python.jp/install/ubuntu/index.html　）  
+次にpythonをインストールします（やり方はhttps://www.python.jp/install/ubuntu/index.html ）  
 そしてpipコマンドと仮想環境作成用の何かをインストールします  
 ```
 sudo apt update
